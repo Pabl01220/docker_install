@@ -1,0 +1,9 @@
+---
+
+- name: "Installation de Docker"
+  hosts: all
+  tasks:
+    - name: "Installation de Docker > install docker"
+      apt:
+        name: docker
+        state: present
